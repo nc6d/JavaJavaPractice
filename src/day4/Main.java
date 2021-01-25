@@ -1,4 +1,4 @@
-package new_task;
+package day4;
 
 import java.util.Arrays;
 import java.util.Random;
