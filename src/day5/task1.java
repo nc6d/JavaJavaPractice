@@ -1,5 +1,7 @@
 package day5;
 
+import java.util.Scanner;
+
 public class task1 {
 
     public static void main(String[] args) {
@@ -13,6 +15,9 @@ public class task1 {
         System.out.println(car0.getYear());
         System.out.println(car0.getColor());
         System.out.println(car0.getModel());
+
+        car0.info();
+        System.out.println("Year difference is: "+ car0.yearDifference(car0.inputYear()));
 
     }
 
@@ -40,6 +45,17 @@ class Car {
     }
     public void setModel(String model){
         this.model = model;
+    }
+    public void info(){
+        System.out.println("It`s a car");
+    }
+    public int yearDifference(int currentYear){
+        return currentYear - year;
+    }
+    public int inputYear(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter an year: ");
+        return sc.nextInt();
     }
 
 
